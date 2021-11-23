@@ -49,6 +49,7 @@ aside h3 {
 }
 blockquote {
   margin-left: 0;
+  margin-bottom: 20px;
   font-style: italic;
 }
 .qoute-author {
@@ -60,4 +61,12 @@ img {
   position: absolute;
 
   right: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:hover {
+  color: gray;
 }
