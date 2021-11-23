@@ -1,0 +1,63 @@
+body {
+  background-color: #dee2e6;
+  margin-bottom: 0;
+}
+h1 {
+  color: rgb(250, 170, 73);
+}
+h4 {
+  border: 1px solid orange;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid black;
+}
+th {
+  background-color: #343a40;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: grey;
+}
+
+aside {
+  width: 150px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+}
+aside h3 {
+  align-self: center;
+}
+
+.container {
+  display: flex;
+
+  gap: 20px;
+}
+.main {
+  max-width: 800px;
+
+  order: 1;
+  position: relative;
+}
+blockquote {
+  margin-left: 0;
+  font-style: italic;
+}
+.qoute-author {
+  font-size: 12px;
+}
+img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+
+  right: 0;
+}
