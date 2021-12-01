@@ -4,61 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <div class="main">
-        <img src="pp.jpg" alt="Steve Jobs" />
-        <h1>Ibrahim Mohamad Alawad</h1>
-        <h2>.NET Developer</h2>
-        <blockquote>
-          “The people who are crazy enough to think they can change the world
-          are the ones who do.”
-        </blockquote>
-        <p class="qoute-author">Steve Jobs</p>
-        <h4>Hoppies:</h4>
-        <ol>
-          <li>Swimming</li>
-          <li>Reading</li>
-          <li>budybulding</li>
-        </ol>
-        <h4>Stats of awesomeness:</h4>
-        <table class="table">
-          <tr>
-            <th>Stat</th>
-            <th>Amount</th>
-          </tr>
+        <header class="header">
+          <h1>Ibrahim Mohamad Alawad</h1>
+          <h2 class="job">.NET Developer</h2>
+          <h3 class="head-profile">PROFIEL</h3>
+          <p class="profiel-text">
+            Gemotiveerde en leergierige .NET Developer, die zowel zelfstandig
+            als in team kan werken. Mijn motto is dat ik alles kan leren en doen
+            als ik de opportuniteit krijg
+          </p>
+        </header>
+        <h4 onclick="myFunction()" class="head-opleiding">OPLEIDINGEN</h4>
+        <ul class="list-opleiding" id="opleiding">
+          <li>
+            .NET Developer, IntecBrussel <br />
+            1 Juni 2021- tot heden.
+          </li>
+          <li>
+            Word,Excel,Powerpoint opleiding<br />
+            Mrt 2020- Apr 2020
+          </li>
+          <li>
+            Farmacie, University of Aleppo <br />
+            Sep 2012 — Jun 2015 <br />Bachelor framaceutische opleiding(diploma
+            is niet erkend in België)
+          </li>
+        </ul>
 
-          <tr>
-            <td>Art</td>
-            <td>Like picasso</td>
-          </tr>
-
-          <tr>
-            <td>Gaming</td>
-            <td>Got Gut</td>
-          </tr>
-          <tr>
-            <td>Stocks</td>
-            <td>Stonks</td>
-          </tr>
-          <tr>
-            <td>Memes</td>
-            <td>Over 90000</td>
-          </tr>
-        </table>
+        <h4 onclick="myFunction2()" class="head-opleiding">WERKERVARING</h4>
+        <ul class="list-opleiding" id="opleiding2">
+          <li>
+            Tolk (Nederlands-Arabisch), Intercultureel Bemiddelingsteam (ICB)<br />
+            Stad Antwerpen. Jun 2020 — Jun 2021
+          </li>
+          <li>
+            Administratief bediende(Jobstudent)<br />
+            OCMW Antwerpen jul 2019 — aug 2019
+          </li>
+          <li>Hulpkok, sodexo Aug 2017 — Sep 2017</li>
+        </ul>
       </div>
       <aside>
-        <h3>Extra</h3>
+        <img src="pp.jpg" alt="Photo Ibrahim" />
 
-        <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">New stuff</a></li>
-        </ul>
+        <h3 class="head-Languages">Talen</h3>
+        <div class="languages">
+          <ul class="languages-list">
+            <li><span class="list-item">Nederlands:</span></li>
+            <li><span class="list-item">Arabisch:</span></li>
+            <li><span class="list-item">Engels:</span></li>
+            <li><span class="list-item">Frans:</span></li>
+          </ul>
+          <ul class="stars">
+            <li>****</li>
+            <li>*****</li>
+            <li>****</li>
+            <li>**</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3 class="head-contact">Contact</h3>
+          <ul>
+            <li>
+              <a href="mailto:ibrahim94awad@gmail.com">
+                Ibrahim94awad@gmail.com</a
+              >
+            </li>
+            <li>0466185008</li>
+          </ul>
+        </div>
       </aside>
     </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("opleiding");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+    <script>
+      function myFunction2() {
+        var n = document.getElementById("opleiding2");
+        if (n.style.display === "none") {
+          n.style.display = "block";
+        } else {
+          n.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

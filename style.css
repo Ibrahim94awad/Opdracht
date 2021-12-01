@@ -1,36 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
 body {
-  background-color: #dee2e6;
-  margin-bottom: 0;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
 }
 h1 {
   color: rgb(250, 170, 73);
+  font-size: 4.2rem;
+  padding: 3.2rem;
 }
-h4 {
-  border: 1px solid orange;
+.job {
+  margin-bottom: 4rem;
+  font-size: 3.2rem;
 }
-table {
-  border-collapse: collapse;
-  width: 100%;
+.head-profile {
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+  color: #aaa;
 }
-th,
-td {
-  border: 1px solid black;
-}
-th {
-  background-color: #343a40;
-  color: white;
-}
-tr:nth-child(even) {
-  background-color: grey;
+.profiel-text {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
 }
 
 aside {
-  width: 150px;
+  width: 20rem;
   height: 100vh;
 
   display: flex;
   flex-direction: column;
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.521);
 }
 aside h3 {
   align-self: center;
@@ -38,27 +51,18 @@ aside h3 {
 
 .container {
   display: flex;
+  max-width: 100rem;
 
-  gap: 20px;
+  gap: 2rem;
 }
 .main {
-  max-width: 800px;
-
   order: 1;
-  position: relative;
 }
-blockquote {
-  margin-bottom: 20px;
-  font-style: italic;
-}
-.qoute-author {
-  font-size: 12px;
-}
-img {
-  width: 120px;
-  height: 120px;
-  position: absolute;
 
+img {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 40px;
   right: 0;
 }
 a {
@@ -68,4 +72,83 @@ a {
 }
 a:hover {
   color: gray;
+}
+
+.head-Languages {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-top: 3.4rem;
+  margin-bottom: 2.2rem;
+}
+.languages-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+
+  align-items: flex-start;
+  font-size: 1.2rem;
+}
+.list-item {
+  font-size: 1.4rem;
+}
+
+.stars {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 2rem;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  margin-bottom: 4.2rem;
+}
+
+.head-opleiding {
+  border-bottom: 3px solid rgba(153, 130, 88, 0.651);
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+  color: rgba(85, 85, 85, 0.507);
+  cursor: pointer;
+}
+.head-opleiding:hover {
+  color: rgb(250, 170, 73);
+  transition: all 0.3s;
+}
+
+.list-opleiding {
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+  margin-left: 1.4rem;
+  display: none;
+}
+
+.list-opleiding li {
+  margin-bottom: 2.4rem;
+  line-height: 1.6;
+}
+
+.head-contact {
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact ul li {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
 }
